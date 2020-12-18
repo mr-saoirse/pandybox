@@ -3,7 +3,7 @@ jobs:
   test:
     machine:
       image: circleci/classic:201808-01
-      docker_layer_caching: true
+      # docker_layer_caching: true - upgrade needed
     working_directory: ~/repo
     steps:
         - checkout
