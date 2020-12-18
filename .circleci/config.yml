@@ -8,6 +8,11 @@ jobs:
     steps:
         - checkout
         - run:
+            name: install dependencies
+            command: |
+              pip install pytest
+              python -m pip install -r requirements.txt
+        - run:
             name: run tests
             command: |
               python -m pytest test/test_main.py
