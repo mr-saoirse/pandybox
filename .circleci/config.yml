@@ -1,9 +1,9 @@
 version: 2
 jobs:
   test:
-    machine:
-      image: circleci/python:3.6.4
-      # docker_layer_caching: true - upgrade needed
+    docker:
+      # specify the version you desire here
+      - image: circleci/python:3.6.1
     working_directory: ~/repo
     steps:
         - checkout
